@@ -2,6 +2,9 @@ package HuaWei;
 
 import java.util.Scanner;
 
+/**
+ * 分解质因数
+ */
 public class DecPrime {
 
 	public static void main(String[] args) {

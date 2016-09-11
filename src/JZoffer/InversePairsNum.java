@@ -7,6 +7,7 @@ public class InversePairsNum {
 	}
 
 	public int InversePairs(int[] array) {
+		return 0;
 
 	}
 

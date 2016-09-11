@@ -24,7 +24,9 @@ public class SolveSudo {
 
 				}
 			}
-			SolveSudo m = new SolveSudo();
+
+			SolveSudo m = new SolveSudo();// 解数独的方法
+
 			m.DFS(a, rows, cols, blocks);// 递归填
 			// 打印解答
 			for (int i = 0; i < 9; i++) {
@@ -44,7 +46,7 @@ public class SolveSudo {
 				// 填补空白的地方
 				if (a[i][j] == 0) {
 					// 需要从0~9每个数都看一遍是否在行列格中都是没有出现过的
-					int k = i / 3 * 3 + j / 3;
+					int k = i / 3 * 3 + j / 3;// 9宫格的编号
 					for (int l = 1; l <= 9; l++) {
 						if (!rows[i][l - 1] && !cols[j][l - 1] && !blocks[k][l - 1]) {
 							// 都没有出现过,尝试添加为l，再看看能不能解答
