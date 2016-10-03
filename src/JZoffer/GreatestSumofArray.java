@@ -12,8 +12,8 @@ public class GreatestSumofArray {
 	public int FindGreatestSumOfSubArray(int[] array) {
 		if (array.length < 1)
 			return 0;
-		int localmax = array[0];
-		int globalmax = array[0];
+		int localmax = array[0];// 初始值很重要
+		int globalmax = array[0];// 初始值很重要
 		for (int i = 1; i < array.length; i++) {
 			localmax = localmax < 0 ? array[i] : localmax + array[i];
 			globalmax = Math.max(localmax, globalmax);
